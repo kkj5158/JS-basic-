@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-size : 1.3em;
+            text-align: center;
+        }
+
+        .colorbox{
+            border : 1px solid black
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <h1> Welcome to my homepage </h1>
+
+    <h2> if you click the sentence , you can chagne color of the sentence</h2>
+    
+    <p id ="blue" class = "colorbox"> blue </p>
+    <p id = "red" class = "colorbox"> red </p>
+    <p id = "purple" class = "colorbox"> purple </p>
+    <p id = "orange" class = "colorbox"> orange </p>
+
+
+    <script>
+
+        
+        var blue = document.querySelector("#blue");
+        var red = document.querySelector("#red");
+        var purple = document.querySelector("#purple");
+        var orange = document.querySelector("#orange");
+
+        blue.onclick = function () {
+            blue.style.color = "blue";
+        }
+
+        red.onclick = function () {
+            red.style.color = "red";
+        }
+
+        purple.onclick = function() {
+            purple.style.color = "purple";
+        }
+
+        orange.onclick = function() {
+            orange.style.color = "orange";
+        }
+
+
+        
+        
+        
+    
+    </script>
+
+    
+
+    
+
+
+
+
+</body>
+</html>
