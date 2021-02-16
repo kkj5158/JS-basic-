@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn" onclick="calc()">나이 계산하기</button>
+    <div id="currentYear" class="show"> </div>
+    <div id="birthYear" class="show"> </div>
+    <div id="age" class="show"> </div>
+    
+    <script>
+        function calc(){
+            var currentYear = prompt("현재 연도를 입력해주세요");
+            var birthYear = prompt("태어난 연도를 입력해주세요");
+
+            var age = currentYear - birthYear + 1;
+
+            document.querySelector("#currentYear").innerHTML = "지금의 연도는" + currentYear + "입니다"
+            document.querySelector("#birthYear").innerHTML = "태어난 연도는" + birthYear + "입니다.";
+            document.querySelector("#age").innerHTML = "당신의 나이는 "  + age + "입니다.";
+        }
+    </script>
+</body>
+</html>
+
+<!--
+
+
+
+
+
+-->
