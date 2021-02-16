@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Changing color of word</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 id="heading" > Welcome to my homepage </h1>
+    <h2 >if you click the sentence , you can change color of the sentence . </h2> 
+
+    <p id="blue"> blue </p>
+    <p id="red"> red </p>
+    <p id="purple"> purple </p>
+    <p id = "orange"> orange </p>
+
+    <script>
+        //var favoritecolor = prompt();
+        var heading = document.querySelector('#heading');
+/*
+        heading.onclick = function() {
+            heading.style.color = favoritecolor.toString();
+        }
+        */
+
+        var p1 = document.querySelector('#blue');
+        var p2 = document.querySelector('#red');
+        var p3 = document.querySelector('#purple');
+        var p4 = document.querySelector('#orange');
+
+        p1.onclick = function() {
+            p1.style.color = "blue";
+        }
+
+        p2.onclick = function(){
+            p2.style.color = "red";
+        }
+
+        p3.onclick = function(){
+            p3.style.color = "purple";
+        }
+
+        p4.onclick = function(){
+            p4.style.color = "orange";
+        }
+
+        
+
+    </script>
+    
+</body>
+</html>
