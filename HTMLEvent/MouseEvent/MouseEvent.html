@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .mouseevent {
+            border: 2px solid black;
+            padding: 30px;
+            margin: 30px;
+
+        }
+
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="mouseevent" id="onclick"> onclick </p>
+    <p class="mouseevent" id="ondblclick"> ondblclick </p>
+    <p class="mouseevent" id="onmousedown"> onmousedown </p>
+    <p class="mouseevent" id="onmousemove"> onmousemove </p>
+    <p class="mouseevent" id="onmouseout"> onmouseout </p>
+    <p class="mouseevent" id="onmouseover"> onmouseover </p>
+    <p class="mouseevent" id="onmouseup"> onmouseup </p>
+
+    <script>
+        var onclick = document.getElementById('onclick');
+
+        onclick.onclick = function () {
+            onclick.innerText = "complete";
+        }
+
+        var ondblclick = document.getElementById('ondblclick');
+
+        ondblclick.ondblclick = function () {
+            ondblclick.innerText = "complete";
+        }
+
+        var onmousedown = document.getElementById('onmousedown');
+
+        onmousedown.onmousedown = function () {
+            onmousedown.innerText = "complete";
+        }
+
+
+
+        var onmousemove = document.getElementById('onmousemove');
+
+        onmousemove.onmousemove = function () {
+            onmousemove.innerText = "complete";
+        }
+        var onmouseout = document.getElementById('onmouseout');
+
+        onmouseout.onmouseout = function () {
+            onmouseout.innerText = "complete";
+
+        }
+
+        var onmouseover = document.getElementById('onmouseover');
+
+        onmouseover.onmouseover = function () {
+            onmouseover.innerText = "complete";
+        }
+
+
+        var onmouseup = document.getElementById('onmouseup');
+
+        onmouseup.onmouseup = function () {
+            onmouseup.innerText = "complete";
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

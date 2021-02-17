@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Changing color of word</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 id="heading" > Welcome to my homepage </h1>
+    <h2 >if you click the sentence , you can change color of the sentence . </h2> 
+
+    <p id="blue" class="color"> blue </p>
+    <p id="red" class="color"> red </p>
+    <p id="purple" class="color"> purple </p>
+    <p id = "orange" class="color"> orange </p>
+
+    <script>
+        //var favoritecolor = prompt();
+        var heading = document.querySelector('#heading');
+/*
+        heading.onclick = function() {
+            heading.style.color = favoritecolor.toString();
+        }
+        */
+
+        /*
+
+
+
+        var p1 = document.querySelector('#blue');
+        var p2 = document.querySelector('#red');
+        var p3 = document.querySelector('#purple');
+        var p4 = document.querySelector('#orange');
+
+        p1.onclick = function() {
+            p1.style.color = "blue";
+        }
+
+        p2.onclick = function(){
+            p2.style.color = "red";
+        }
+
+        p3.onclick = function(){
+            p3.style.color = "purple";
+        }
+
+        p4.onclick = function(){
+            p4.style.color = "orange";
+        }
+
+        */
+
+        // HTMLCollection 사용해서 코드 간략하게 만들기 
+
+        var pgroup = document.getElementsByClassName('color');
+
+       // pgroup[0].style.color = "red";
+
+       /*
+
+
+       for(var i = 0 ; i< pgroup.length ; i++){
+           pgroup[i].style.color = "red";
+       }
+
+       */
+
+       /*
+
+       for(var i = 0; i < pgroup.length; i++){
+        pgroup[i].onclick = function () {
+           pgroup[i].style.color = "blue";
+       }
+
+       }
+
+       */
+
+
+
+       pgroup[0].onclick = function () {
+           pgroup[0].style.color = "blue";
+       }
+
+       pgroup[1].onclick = function () {
+           pgroup[1].style.color = "red";
+       }
+
+       pgroup[2].onclick = function () {
+           pgroup[2].style.color = "purple";
+       }
+
+
+       pgroup[3].onclick = function () {
+           pgroup[3].style.color = "orange";
+       }
+
+       /*
+
+       (2021.02.17)
+
+       해결책 찾기 -> HTMLCollection 으로 HTMl 구성요소 받고, 반복문 활용해서
+       각각의 요소에 클릭시 색상 변경하도록
+
+       - 색상도 미리 지정된 HTML 속성 사용하는 방법 활용해보기 
+
+
+
+
+
+
+       */
+
+        
+
+        
+
+        
+
+
+        
+
+        
+
+    </script>
+    
+</body>
+</html>

@@ -5,69 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
-    <style>
-        body {
-            font-size : 1.3em;
-            text-align: center;
-        }
-
-        .colorbox{
-            border : 1px solid black
-        }
-
-        
-    </style>
 </head>
 <body>
 
-    <h1> Welcome to my homepage </h1>
+    <p onclick="click()"> if you click this sentence, it will be changed orange color.</p>
 
-    <h2> if you click the sentence , you can chagne color of the sentence</h2>
+    <p onclick="click()"> if you click this sentence, it will be changed orange color.</p>
+
+    <p ondblclick="dbclick()">if you dbclick this sentence, it will be chagned red color. </p>
+
+    <p ondblclick="dbclick()">if you dbclick this sentence, it will be chagned red color. </p>
+
+
+
+
+
     
-    <p id ="blue" class = "colorbox"> blue </p>
-    <p id = "red" class = "colorbox"> red </p>
-    <p id = "purple" class = "colorbox"> purple </p>
-    <p id = "orange" class = "colorbox"> orange </p>
+
 
 
     <script>
 
-        
-        var blue = document.querySelector("#blue");
-        var red = document.querySelector("#red");
-        var purple = document.querySelector("#purple");
-        var orange = document.querySelector("#orange");
-
-        blue.onclick = function () {
-            blue.style.color = "blue";
+        function click() {
+            document.getElementsByTagName(p);
         }
 
-        red.onclick = function () {
-            red.style.color = "red";
-        }
-
-        purple.onclick = function() {
-            purple.style.color = "purple";
-        }
-
-        orange.onclick = function() {
-            orange.style.color = "orange";
-        }
-
-
-        
-        
-        
-    
     </script>
-
-    
-
-    
-
-
-
-
 </body>
 </html>
+
+<!--
+
+
+    html 마우스 이벤트 속성 // onclick 과 ondbclick
+
+    
+
+    
+-->
+
+
+<!--
+    getElementById 와 querySelector 의 차이점 
+    
+    getElementById : id 를 통해 엘리먼트를 반환한다. 
+
+    querySelector
+
+    selecotr 의 구체적인 그룹과 일치하는 document와 첫번째 엘리먼트를 반환한다.
+    
+-->
