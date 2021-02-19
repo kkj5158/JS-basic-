@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* p has block-box model.*/
+        p{
+            border: solid black 1px;
+        }
+
+        /* ul has block-box model . */
+
+        ul{
+            display : inline-flex;
+            list-style: none;
+            padding : 0;
+        }
+
+        /*li has block-box model basically . */
+
+        li{
+            border: solid black 1px;
+        }
+
+        /* span basically has in-line box model . but you can change it to block box-model.*/
+
+        span{
+            border: solid black 1px ;
+            display : block;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <p> I am a paragraph A short one. p tag ususally has block-box model. </p>
+
+    
+
+    <ul>
+        <li> Item one </li>
+        <li> Item Two </li>
+        <li> Item Three</li>
+    </ul>
+
+    <p> I am another paragraph . Some of the <span class="block"> words </span> have been wrapped in a <span> span element </span></p>
+    
+</body>
+</html>
+
+
+<!--
+    https://developer.mozilla.org/ko/docs/Learn/CSS/Building_blocks/%EC%83%81%EC%9E%90_%EB%AA%A8%EB%8D%B8
+    
+    css 에 포함되는 모든 요소의 외장은 박스이며, 이 박스를 이해하는 것은 css 를 통해 레이아웃을 생성하거나 아이템과
+    아이템을 정렬하는것을 가능하게 하는 열쇠이다. 
+
+    블록 및 인라인 박스
+
+    박스가 블록으로 정의 되면 : 
+
+    박스가 블록으로 정의시 -> 요소가 한줄 전체를 차지한다는 것을 의미한다. 
+
+    박스가 인라인으로 정의 되면 ;
+
+    요소는 줄바꿈 되지 않습니다. 
+
+    html 의 요소가 기본적으로 블록박스인지, 인라인 박스 요소인지 확인하는 것이 항상 중요합니다. 
+
+
+-->

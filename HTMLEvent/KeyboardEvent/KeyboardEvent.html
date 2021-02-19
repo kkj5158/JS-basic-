@@ -13,7 +13,7 @@
     <title>Document</title>
     <style>
         div{
-            font-size : 1.5em;
+            font-size : 2rem;
             text-align:center;
             color:white;
             background: black;
@@ -29,8 +29,8 @@
 
     <script>
         window.addEventListener("keydown", e => {
-            const key =
-            document.getElementById
+            const key = document.getElementById(e.key)
+            if(key) key.classList.add("pressed")
         })
     </script>
 
